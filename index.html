@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPC2 PRACTICA 2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="css/canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#scrollspyHeading2">Perfil Profesional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#scrollspyHeading4">Competencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">Formacion Academica</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!------------------------------------PRIMER CONTENEDOR----------------------------------->
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <p id = "scrollspyHeading1"></p>
+    <div class="row featurette" >
+      <div class="col-sm-5">
+        <img src="Img/foto2.jpeg" class="img-fluid rounded-circle" alt="...">
+      </div>
+      <div class="col-sm-7">
+        <h2 class="featurette-heading align-middle" >Evelio Marcos Josue Cruz Soliz</h2>
+        <p class="lead align-middle">16 calle, 21-45 Zona 10, 01010, Ciudad de Guatemala, Guatemala.
+          42776152, marcojosuecruz81@gmail.com
+          </p>
+      </div>
+    </div>
+    <hr class="featurette-divider" id = "scrollspyHeading2">
+  
+    
+  <!------------------------------------SEGUNDO CONTENEDOR----------------------------------->
+    <div class="row featurette " >
+      <div class="col-sm-7">
+        <h2 class="featurette-heading align-middle" >Perfil Profesional</h2>
+        <p class="lead align-middle">Estudiante de ingeniería en ciencias y sistemas, también 
+          estudiante de una Licenciatura en Administración de 
+          Empresas, guatemalteco, apasionado por hacer las cosas con 
+          excelencia, buscando cada día convertirme en la mejor 
+          versión de mi con ayuda de Dios y de mis seres queridos.
+          </p>
+      </div>
+      <div class="col-sm-5">
+        <img src="Img/Foto1.jpeg" class="img-fluid" alt="...">
+      </div>
+    </div>
+    <hr class="featurette-divider" id="scrollspyHeading4" >
+
+
+  <!------------------------------------TERCER CONTENEDOR----------------------------------->
+    
+  <!------------------------------------CUARTO CONTENEDOR----------------------------------->
+    <h2 class="featurette-heading align-middle" >Competencias</h2>
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Python"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Java"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Office"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Soft Skills"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Img/python.jpg" class="img-fluid cropped" alt="..."  >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Programacion Python</h1>
+              <p>Nivel intermedio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="Img/java.png " class="img-fluid cropped" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Programacion Java</h1>
+              <p>Nivel basico</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="Img/office.png" class="img-fluid cropped" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Manejo de paquetes de Office</h1>
+              <p>Nivel intermedio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="Img/tulate.jpeg" class="img-fluid" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Soft Skills</h1>
+              <p>Capacidad de oratoria; Capacidad para trabajar bajo presión; Excelentes relaciones interpersonales.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
+
+
+
+    <h4 id="scrollspyHeading5"></h4>
+    <h2 class="featurette-heading align-middle" >Formacion Academica</h2>
+    <p>...</p>
+  </div>
+  
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" src = "Img/Seminario.jpeg" width="140" height="140" ></img>
+        <h2>Nivel Diversificado</h2>
+        <p>[2017] Bachillerato en Ciencias y Letras con Orientación en 
+          Computación, INED Centro Dos La Máquina, Retalhuleu</p>
+      </div>
+
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" src = "Img/fccee logo.jpg" width="140" height="140" ></img>
+          <h2>Facultad de Ciencias Economicas USAC</h2>
+          <p>[2022] 16 Cursos aprobados de Licenciatura en 
+            Administración de Empresas, Facultad de Ciencias 
+            Económicas de la Universidad de San Carlos de Guatemala
+            </p>
+        </div>
+
+    
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" src = "Img/logo-fiusac.png" width="140" height="140" ></img>
+            <h2>Facultad de Ingeniería USAC</h2>
+            <p>[2022] 17 Cursos aprobados de Ingeniería en Ciencias y
+              Sistemas, Facultad de Ingeniería de la Universidad de San 
+              Carlos de Guatemala
+              </p>
+          </div>
+      
+
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider" >
+
+    <div class="row featurette " >
+      <div class="col-sm-7">
+        <h2 class="featurette-heading align-middle" >Por ultimo...</h2>
+        <p class="lead align-middle">A pesar de que no es mi especializacion, tengo un año de experiencia como docente de matematicas y computacion en un Instituto rural
+          </p>
+      </div>
+      <div class="col-sm-5">
+        <img src="Img/Instituto.jpeg" class="img-fluid" alt="...">
+      </div>
+    </div>
+    
+
+    
+</main>
+
+
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
